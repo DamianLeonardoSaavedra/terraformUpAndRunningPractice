@@ -9,9 +9,10 @@ resource "aws_s3_bucket" "enve-dami-s3" {
     versioning {
       enabled = true
     }
- 
+    force_destroy = true
+
     lifecycle {
-      prevent_destroy = true
+      prevent_destroy = false
   }
   
   # Habilita encriptacion del lado del servidor por default
