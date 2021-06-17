@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "enve-dami-s3" {
       prevent_destroy = true
   }
   
-  # Enable server-side encryption by default
+  # Habilita encriptacion del lado del servidor por default
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
