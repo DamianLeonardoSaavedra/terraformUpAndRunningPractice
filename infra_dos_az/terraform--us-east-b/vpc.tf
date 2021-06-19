@@ -9,7 +9,7 @@ resource "aws_vpc" "enve-dami-vpc" {
 }
 
 resource "aws_internet_gateway" "enve-dami-igw" {
-  vpc_id = "${aws_vpc.enve-dami-vpc.id}"
+  vpc_id = aws_vpc.enve-dami-vpc.id
 
   tags = {
     type = "enve-dami-igw"
