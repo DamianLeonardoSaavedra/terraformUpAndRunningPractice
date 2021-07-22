@@ -4,21 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building app..'
-                echo 'Building app..'
-                echo 'Building webhook build..'
+                echo 'Building app.., Hola'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing app..'
-                echo 'Building webhook test.., Hola!!!'
+                echo 'Testing app.., sos!!!'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
-                echo 'Building webhook from machine..'
+                echo 'Deploying app...., un campeon'
             }
         }
     }
