@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo 'Building webhook build..'
+                echo 'Building webhook from machine..'
             }
         }
     }
